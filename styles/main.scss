@@ -1,0 +1,556 @@
+@import "colors.scss";
+
+html, body {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto; 
+    min-height: 100%;
+}
+
+.header {
+    height: 1109px;
+    background-color: $dark-bg;
+
+    .header-line {
+        height: 110px;
+        padding-left: 70px;
+        padding-right: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left-side {
+        display: flex;
+        align-items: center;
+
+        .logo_img {
+            height: 28px;
+            width: 24.5px;
+        }
+
+        .pages_img {
+            height: 26.4px;
+            width: 81.4px;
+            margin-left: 10px;
+        }
+    }
+
+    ul {
+        margin-left: 38px;
+
+        li {
+            display: inline-block;
+            color: $text-color;
+        }
+        &.social {
+            li {
+                width: 45px;
+                height: 45px;
+                background-color: #fff;
+                line-height: 45px;
+                text-align: center;
+            }
+           
+        }
+      
+    }
+
+    .right-side {
+        display: flex;
+        align-items: center;
+
+        nav.menu ul li {
+            margin-right: 50px;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 26px;
+            letter-spacing: 0.17px;
+
+            
+            &:hover {
+                color: $button-color;
+            }
+        }
+
+        .order {
+            color: $text-color-dark;
+            background-color: $button-color;
+            padding: 18px 52px;
+            text-decoration: none;
+        }
+    }
+
+    .main {
+        padding: 99px 91px 100px 93px;
+        display: flex;
+
+        .left {
+            width: 664px;
+
+            .hr {
+                display: flex;
+                font-family: 'Cardo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 21px;
+                line-height: 36px;
+                letter-spacing: 1.2px;
+                text-transform: capitalize;
+                color: #FFFFFF;
+                padding-top: 146px;
+
+                div {
+                    width: 35px;
+                    height: 3px;
+                    background-color: $button-color;
+                    margin-top: 16px;
+                    margin-right: 14px;
+                }
+            } 
+
+            h2 {
+                font-family: 'Cardo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 64px;
+                line-height: 78px;
+                letter-spacing: 1.3px;
+                color: #FFFFFF;
+                padding-top: 10px;
+            }
+
+            p {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                color: #B4C7E7;
+                padding-top: 24px;
+            }
+
+            button {
+                width: 222px; 
+                height: 66px;
+                margin-top: 42px;
+                background-color: $dark-bg;
+                border: 0;
+                font-family: 'Cardo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 30px;
+                letter-spacing: 0.38px;
+                text-transform: capitalize;
+                color: #FFFFFF;
+                text-decoration: underline;
+                text-underline-offset: 6px;
+                
+                &:hover {
+                    background-color: $button-color;
+                    color: $text-color-dark;
+                    text-decoration: none;
+                }
+            }
+
+            div.specification {
+                display: flex;
+                padding-top: 47px;
+             
+                .about_books {
+                    display: flex;
+                    font-family: 'Cardo';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 29px;
+                    letter-spacing: 0.48px;
+                    color: #FFFFFF;
+
+
+                .button {
+                    width: 16px;
+                    height: 16px;
+                    background-color: $button-color;
+                    border-radius: 50%;
+                    margin-top: 7px;
+                    margin-right: 10px;
+                }
+
+                .text {
+                    padding-right: 70px;
+                }
+            }
+            }
+
+            div.more_specification {
+                display: flex;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 27px;
+                color: #B4C7E7;
+                padding-top: 12px;
+
+                div {
+                    padding-left: 24px;
+                    padding-right: 80px;
+                }
+            }
+        }
+    }
+}
+
+.books {
+    height: 805px;
+    background-color: $white-bg;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    h3 {
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 50px;
+        text-align: center;
+        text-transform: capitalize;
+        color: $text-color-dark;
+        padding-top: 125px;
+    }
+
+    hr {
+        height: 3px;
+        width: 50px;
+        background-color: $button-color;
+        margin: 23px 50% 70px 50%;
+    }
+
+    .two_books {
+        display: flex;
+    }
+
+    .post_books {
+        display: flex;
+
+        li {
+            list-style-type: none;
+        }
+
+        img {
+            height: 382px;
+            width: 285px;
+            margin-right: 30px;
+        }
+
+        .name_of_book {
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            letter-spacing: 0.32px;
+            color: $text-color-dark;
+            padding-top: 38px;
+        }
+
+        .cost {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 33px;
+            color: $cost-color;
+            padding-top: 7px;
+        }
+
+        .about_book {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 28px;
+            color: #969AA0;
+            padding-right: 48px;
+            padding-top: 17px;
+            padding-bottom: 13px; 
+        }
+
+        .point {
+
+            display: flex;
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: $text-color-dark;
+
+
+            div {
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background-color: $button-color;
+                margin-right: 10px;
+                margin-top: 6px;
+            }
+        }
+    }
+}
+
+.author {
+    height: 960px;
+    background-color: $author-bg;
+    padding: 150px 90px 140px 40px;
+    display: flex;
+
+    img.photo_reader {
+        height: 620px;
+        width: 525px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    div.yellow_border {
+        border: 10px solid #FFCA42;
+        height: 620px;
+        width: 525px;
+        position: relative;
+        top: 30px;
+        left: 30px;
+    }
+
+    .about_writer {
+        padding-left: 200px;
+
+        h3 {
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 42px;
+            line-height: 50px;
+            text-transform: capitalize;
+            color: $text-color-dark;
+            padding-top: 46px;
+        }
+
+        hr {
+            height: 3px;
+            width: 50px;
+            background-color: $button-color;
+            margin-top: 23px;
+        }
+
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 34px;
+            color: #969AA0;
+            padding-top: 33px;
+            padding-right: 126px;
+        }
+
+        ul.numbers {
+            display: flex;
+            padding-top: 33px;
+            list-style-type: none;
+
+            hr {
+                width: 1px;
+                height: 98px;
+                background-color: $button-color;
+                margin-right: 33px;
+            }
+
+            h4 {
+                font-family: 'Cardo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 54px;
+                line-height: 77px;
+                color: $text-color-dark;
+            }
+
+            p.numbers {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 22px;
+                color: #969AA0;
+                padding-top: 1px;
+                padding-right: 40px;
+            }
+        }
+
+        div.qrq {
+            width: 484px;
+            height: 161px;
+            background-color: $dark-bg;
+            margin-top: 54px;
+            display: flex;
+
+            img {
+                height: 130px;
+                width: 130px;
+                margin-top: 15px;
+                margin-left: 20px;
+                margin-right: 40px;
+            }
+
+            h5 {
+                font-family: 'Cardo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 26px;
+                color: $cost-color;
+                padding-top: 37px;
+                padding-bottom: 6px;
+            }
+
+            p {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                color: #B4C7E7;
+                padding-right: 0px;
+                padding-top: 4px;
+            }
+        }
+    }
+} 
+
+.trusted {
+    height: 637px;
+    background-color: $white-bg;
+
+    h3 {
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 50px;
+        text-align: center;
+        text-transform: capitalize;
+        color: $text-color-dark;
+        padding-top: 126px;
+    }
+
+    hr {
+        height: 3px;
+        width: 50px;
+        background-color: $button-color;
+        margin: 23px 50% 50px 50%;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding-left: 78px;
+        padding-right: 73px;
+        gap: 47px;
+
+        img {
+            height: 100px;
+            width: 189px;
+            display:block;
+            margin:auto;
+        }
+
+        h6 {
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: $text-color-dark;
+            padding-top: 22px;
+        }
+
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 28px;
+            text-align: center;
+            color: #969AA0;
+            padding-top: 19px;
+        }
+    }
+}
+
+.get-book {
+    height: 534px;
+    background-color: $dark-bg;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+
+    h2 {
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 54px;
+        text-transform: capitalize;
+        color: #fff;
+        padding-top: 71px;
+    }
+
+    hr {
+        height: 3px;
+        width: 50px;
+        background-color: $button-color;
+        margin-top: 24px;
+    }
+
+    p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 28px;
+        color: #B4C7E7;
+        padding-top: 27px;
+    }
+    
+    img {
+        height: 394px;
+        width: 560px;
+        object-fit: cover;
+    }
+   
+}    
+
+.what-will {
+    height: 1075px;
+    background-color: $white-bg;
+}
+
+.articles {
+    height: 1045px;
+    background-color: $light-bg;
+}
+
+.footer {
+    height: 486px;
+    background-color: $dark-bg;
+}
